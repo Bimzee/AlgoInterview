@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MinimumSum;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -30,11 +31,20 @@ public class Program
         return sum;
     }
 
-    public static void Main1()
+    public static void Main()
     {
-        int[] arr = { 10, 20, 30, 40, 50 };
-        int k = 3;
-        int result = MinimizeArraySum(arr, k);
-        Console.WriteLine("Minimum sum: " + result); // Output: 90
+        TwoSums twoSums = new TwoSums();
+        //var result = twoSums.TwoSum(new int[] { 3,2,4 }, 6);
+        var result = twoSums.TwoSumsWith2Pointer(new int[] { 3,2,4 }, 6);
+        Console.WriteLine("Result of TwoSum: " + string.Join(", ", result));
+
+        //Anagram anagramChecker = new Anagram();
+        //var first = anagramChecker.IsAnagram("anagram", "nagaram");
+        //var second = anagramChecker.IsAnagram("rat", "car");
+
+        //int[] arr = { 10, 20, 30, 40, 50 };
+        //int k = 3;
+        //int result = MinimizeArraySum(arr, k);
+        //Console.WriteLine("Minimum sum: " + result); // Output: 90
     }
 }

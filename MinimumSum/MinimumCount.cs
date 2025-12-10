@@ -33,13 +33,13 @@ namespace MinimumSum
             return currentSum + 1;
         }
 
-        static void Main()
-        {
-            CoinChangeProblem.CoinChangeMain();
-            charCount.Main1();
-            //int[] numbers = { 1, 3, 4, 0 };
-            //int minimumUnrepresentableNumber = FindMinimumUnrepresentableNumber(numbers);
-            //Console.WriteLine("The minimum unrepresentable number is: " + minimumUnrepresentableNumber);
-        }
+        //static void Main()
+        //{
+        //    CoinChangeProblem.CoinChangeMain();
+        //    charCount.Main1();
+        //    //int[] numbers = { 1, 3, 4, 0 };
+        //    //int minimumUnrepresentableNumber = FindMinimumUnrepresentableNumber(numbers);
+        //    //Console.WriteLine("The minimum unrepresentable number is: " + minimumUnrepresentableNumber);
+        //}
     }
 }
