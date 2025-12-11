@@ -33,10 +33,15 @@ public class Program
 
     public static void Main()
     {
-        TwoSums twoSums = new TwoSums();
-        //var result = twoSums.TwoSum(new int[] { 3,2,4 }, 6);
-        var result = twoSums.TwoSumsWith2Pointer(new int[] { 3,2,4 }, 6);
-        Console.WriteLine("Result of TwoSum: " + string.Join(", ", result));
+        MaxSubArray maxSubArray = new MaxSubArray();
+        var result = maxSubArray.FindMaxSubArray(new int[] { 2,1,5,1,3,2 }, 3);
+        Console.WriteLine("Maximum subarray sum: " + result);
+
+        //TwoSums twoSums = new TwoSums();
+        ////var result = twoSums.TwoSum(new int[] { 3,2,4 }, 6);
+        ////var result = twoSums.TwoSumsWith2Pointer(new int[] { 3,2,4 }, 6);
+        //var result = twoSums.TwoSum_HashMap(new int[] { 3,2,4 }, 6);
+        //Console.WriteLine("Result of TwoSum: " + string.Join(", ", result));
 
         //Anagram anagramChecker = new Anagram();
         //var first = anagramChecker.IsAnagram("anagram", "nagaram");
